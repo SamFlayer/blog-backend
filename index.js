@@ -27,6 +27,7 @@ const upload = multer({ storage })
 app.use(express.json())
 app.use(cors())
 app.get('/', (req, res) => {
+  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate')
   res.send('Hello world');
 });
 
