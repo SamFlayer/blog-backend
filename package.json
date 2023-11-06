@@ -5,9 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npm run build && npm run start:dev2",
-    "start:dev2": "node index.js",
-    "build": "npm i",
+    "start": "node index.js",
     "start:dev": "nodemon index.js"
   },
   "author": "",
